@@ -1,7 +1,7 @@
 var inputText = document.querySelector("#input");
 var btnTranslate = document.querySelector("#btn-translate");
 var outputText = document.querySelector("#output");
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 function textTranslate(text) {
     return serverURL + "?" + "text=" + text;
@@ -13,14 +13,13 @@ function errorHandler(error) {
 
 function clickHandler() {
     var textInput = inputText.value;
-    fetch(textTranslate)
+    fetch(textTranslate(inputText))
         .then(response => response.json())
         .then(json => {
-                var translatedText = json.contents.translated;
-                translatedText.innerText;
-            }
+            var translatedText = json.contents.translated;
+            outputText.innerText = translatedText;
         })
         .catch(errorHandler);
+}
 
-
-    btnTranslate.addEventListener("click", clickHandler);
+btnTranslate.addEventListener("click", clickHandler);
