@@ -1,17 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --primary-color: #f5e050;
+}
+
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navigation {
-    background-color: yellow;
-    height: 7vh;
+    background-color: var(--primary-color);
+    /* height: 7vh; */
+}
+
+.navigation h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
 }
 
 #input {
@@ -34,4 +44,43 @@ body {
     padding: 1rem;
     margin: 1rem;
     border: 1px solid black;
+}
+
+.list-item-inline {
+    display: inline-block;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    /* justify-content: center; */
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.footer i {
+    color: black;
+    font-size: 35px;
+    
+}
+
+.footer p {
+    padding-bottom: 1rem;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.footer .social-links {
+    
 }
