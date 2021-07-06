@@ -11,13 +11,27 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #fffce8;
+    position: relative;
+
+}
+
+body::before {
+    content: "";
+    background-image: url('/images/bg-minions.jpeg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
 
 .navigation {
     background-color: var(--primary-color);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border: 1px solid black;
+    position: relative;
     /* height: 7vh; */
 }
 
@@ -37,11 +51,6 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-image: url('/images/bg-minions.png'); */
-    /* background-repeat: repeat-x; */
-    background-color: #fffce8;
-    /* background-blend-mode: lighten; */
-
 }
 
 #input {
@@ -51,16 +60,19 @@ main {
     padding: 1.5rem 1rem;
     margin: 1.5rem;
     border-radius: 1rem;
+    font-size: 1.2rem;
     background-color: #fffce8;
     text-align: center;
-    font-size: 1rem;
+    position: relative;
 }
 
 #btn-translate {
     margin: 1rem;
     border-radius: 1.5rem;
     padding: 1rem;
+    font-size: 1rem;
     background-color: var(--primary-color);
+    position: relative;
 }
 
 #output {
@@ -69,9 +81,11 @@ main {
     padding: 1.5rem 1rem;
     margin: 1.5rem;
     border: 1px solid black;
+    font-size: 1.2rem;
     border-radius: 1rem;
     text-align: center;
-    font-size: 1rem;
+    position: relative;
+    background-color: #fffce8;
 }
 
 .list-item-inline {
@@ -84,6 +98,8 @@ main {
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    position: relative;
+    border: 1px solid black;
 }
 
 .footer ul li {
@@ -94,7 +110,7 @@ main {
 .footer i {
     color: black;
     font-size: 35px;
-    
+
 }
 
 .footer p {
