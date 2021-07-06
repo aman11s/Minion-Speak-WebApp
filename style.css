@@ -124,3 +124,47 @@ main {
 .links {
     text-decoration: none;
 }
+
+@media screen and (max-width: 414px) {
+
+    .navigation h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.3rem;
+    }
+
+    .navigation h1 img {
+        right: 20px;
+        bottom: 10px;
+    }
+
+    #input {
+        font-size: 1rem;
+    }
+
+    #output {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .navigation h1 img {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .navigation h1 img {
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .navigation h1 {
+        font-size: 2rem;
+    }
+}
