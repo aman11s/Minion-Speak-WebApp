@@ -32,7 +32,6 @@ body::before {
     border-bottom-right-radius: 1rem;
     border: 1px solid black;
     position: relative;
-    /* height: 7vh; */
 }
 
 .navigation h1 {
@@ -73,7 +72,6 @@ main {
     font-size: 1rem;
     background-color: var(--primary-color);
     position: relative;
-    /* border: 1px solid black; */
 }
 
 #output {
@@ -89,13 +87,8 @@ main {
     background-color: #fffce8;
 }
 
-.list-item-inline {
-    display: inline-block;
-}
-
 .footer {
     background-color: var(--primary-color);
-    /* justify-content: center; */
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -120,10 +113,6 @@ main {
 
 .social-links {
     list-style-type: none;
-}
-
-.links {
-    text-decoration: none;
 }
 
 @media screen and (max-width: 414px) {
