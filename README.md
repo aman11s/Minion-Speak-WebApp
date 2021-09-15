@@ -21,6 +21,9 @@ If you are a Minion fan you will surely love this. It is a traslator WebApp whic
 - [LinkedIn](https://linkedin.com/in/aman11s "Aman's LinkedIn")
 
 ---
+### Live Project Link: [Click Here](https://speak-minion-lang.netlify.app "Minion Translator")
+
+---
 
 ### If you like this repository please give a ⭐ in the top right corner. 😊
 
